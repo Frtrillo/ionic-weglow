@@ -12,6 +12,18 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-button (click)="this.getWeglow()"><i class="fa-solid fa-circle-notch" *ngIf="this.loadingRequest"></i>
+          Test</ion-button>
+      </ion-col>
+      <ion-col size="12" *ngIf="this.showVersionInfo">
+        Android version: {{ this.weglowServerVersion.android }}
+     
+        iOS version: {{ this.weglowServerVersion.ios }}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
   <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
