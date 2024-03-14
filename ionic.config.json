@@ -1,0 +1,7 @@
+{
+  "name": "Ionic weglow",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
